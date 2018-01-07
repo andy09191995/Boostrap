@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* --- navbar start --- */
+
+.navbar {
+  background-color: #041528 ;
+  margin: 0px -15px;
+}
+
+.navbar-brand {
+  background-color: #364453;
+  height: 32px;
+  width: 160px;
+  margin-left: 2rem ;
+  margin-right: 2rem ;
+}
+
+/* 漢堡選單微調部分 WB */
+
+.button-margin {
+  margin: 22px 16px 26px;
+  padding: 0;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  display: inline-block;
+}
+
+.burger-bar {
+  background-color: #979797;
+  display: block;
+  width: 16px;
+  height: 3px;
+  margin: 0 auto 3px;
+}
+
+.burger-bottom {
+  margin: 0 auto 0;
+}
+
+/* 漢堡選單微調部分 WB */
+
+/* 漢堡選單 WB */
+
+.navbar-toggler span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(2) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler span:nth-child(3) {
+  -webkit-transform-origin: left-center;
+          transform-origin: left-center;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+  -webkit-transform: translate(0, 6px) rotate(45deg);
+          transform: translate(0, 6px) rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+  width: 0;
+  opacity: 0%;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+  -webkit-transform: translate(0, -6px) rotate(-45deg);
+          transform: translate(0, -6px) rotate(-45deg);
+}
+/* 漢堡選單 */
+
+/* NAV1.2 */
+
+.nav-link {
+  font-size: 20px !important;
+  padding: 17px 19px !important;
+  color: #fff !important;
+}
+
+.nav-item:hover {
+  background-color: #4090F7;
+
+}
+
+/* NAV1.2 */
+
+/*last part card*/
+.Transcard {
+  padding:16px 16px;
+  background-color: #F0F2F5;
+  height: auto;
+  margin: 0 -15px;
+}
+
+.outline {
+  height: 250px;
+  border: 8px solid #F0F2F5;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.card {
+
+  height: 250px;
+  perspective:2000px;
+  transition: transform 1s ease-out;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor:pointer;
+}
+
+.card div {
+  width: 100%;
+  height: 250px;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+
+.card .cardA {
+  background-color: #FFF;
+}
+
+.card .cardB {
+  background-color: black;
+  transform: rotateY(180deg);
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.cardB img{
+  width: 100%;
+  height: 100%;
+}
